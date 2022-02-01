@@ -1,7 +1,9 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes, Link, BrowserRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+// import { useAuth0 } from '@auth0/auth0-react';
 
 const Home = () => {
+  // const { isAuthenticated } = useAuth0();
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -30,8 +32,26 @@ const Home = () => {
           </ul>
 
         </div>
-
       </nav>
+
+      <div>
+        <Link className="Trekking" to={"/trekking"}>Trekking</Link>
+      </div>
+      <div>
+        <Link className="Heritage" to={"/heritage"}>Heritage</Link>
+      </div>
+      <div>
+        <Link className="Wildlife" to={"/wildlife"}>Wildlife</Link>
+      </div>
+      <div>
+        <Link className="Pilgrimage" to={"/pilgrimage"}>Pilgrimage</Link>
+      </div>
+      <div>
+        <Link className="HillStations" to={"/hillstations"}>Hill Stations</Link>
+      </div>
+      <div>
+        <Link className="BeachTour" to={"/beachtour"}>Beach Tour</Link>
+      </div>
     </>
   );
 };

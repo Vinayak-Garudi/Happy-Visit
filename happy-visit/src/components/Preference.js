@@ -35,13 +35,13 @@ const Preference = () => {
         );
         setPreferences(tempPreference);
     };
-    let navigate = useNavigate();
+    const navigate = useNavigate();
 
     const handleSubmit = async (ev) => {
         console.log("sibmit button clicked");
         ev.preventDefault();
 
-        const preference = preferences;
+       
 
         const res = await fetch(
             "https://happy-visit-32e03-default-rtdb.firebaseio.com/userPreferences.json", {
@@ -50,7 +50,7 @@ const Preference = () => {
                 "Content-Type": "application/json",
             },
             body: JSON.stringify({
-                preference
+                setPreferences         
             })
         }
         );
@@ -74,7 +74,7 @@ const Preference = () => {
                             <div className="form-check" key={index}>
                                 <input type="checkbox" className='form-check-input'
                                     name='option.preference'
-                                    value={preferences.name}
+                                    // value={preferences.name}
                                     checked={option?.isChecked}
                                     onChange={handleChange} />
                                 <label className='form-check-label'>{option.preference}</label>
