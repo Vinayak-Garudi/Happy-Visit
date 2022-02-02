@@ -3,14 +3,14 @@ import firebase from 'firebase/app';
 import 'firebase/auth';
 
 const app = firebase.initializeApp({
-    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-    authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
-    databaseURL: process.env.REACT_APP_FIREBASE_DATABASE_URL,
-    projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
-    storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-    messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
-    appId: process.env.REACT_APP_FIREBASE_APP_ID,
-    measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID
+    apiKey: "AIzaSyAyr30BGZujX4tVrrP5cCGWyFGMxSQQ7pM",
+    authDomain: "happy-visit-32e03.firebaseapp.com",
+    databaseURL: "https://happy-visit-32e03-default-rtdb.firebaseio.com",
+    projectId: "happy-visit-32e03",
+    storageBucket: "happy-visit-32e03.appspot.com",
+    messagingSenderId: "200795276042",
+    appId: "200795276042:web:31b4ccef5c8349496770f3",
+    measurementId: "G-KGRBCZH1PT"
 })
 
 export const auth = app.auth()
